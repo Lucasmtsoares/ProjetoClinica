@@ -7,11 +7,21 @@ body{
 div#areaTotal{
     margin: auto;
     width: 50%;
-    border: 3px solid white;
+    /*border: 3px solid white;*/
     padding: 10px;
 }
 h1#tituloPrincipal{
     font-family: 'Courier New', Courier, monospace;
+    padding-left: 5px;
+    text-align: center;
+    font-size: 300%;
+    mask-image: linear-gradient(to right, #f00, #00f);
+}
+div#campo_top{
+    border: 1px solid white;
+    width: 100%;
+    height: 50%;
+    background-color: azure;
 }
 div#menu{
    margin-right: auto;
@@ -23,11 +33,9 @@ ul#opcoes{
     margin: 0;
     padding: 0;
 }
-/*ul#opcoes{
-    position: fixed;
-    top: 0;
-    width: 100%;
-}*/
+nav#barraNav{
+   transform: translate(18%,50%);
+}
 li#op{
     float: left;
     padding: 10px;
@@ -37,7 +45,7 @@ li#op a{
     text-decoration: none;
 }
 li#op a:hover:not(#op){
-    background-color: brown;
+    background-color: rgb(18, 104, 46);
 }
 li#op{
      background-color: #04AA6D;
@@ -51,6 +59,6 @@ img#img1{
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    background-image: linear-gradient(to right, rgb(52, 13, 13), rgb(243, 243, 249));
-
+    padding-top: 5%;
+   
 }
