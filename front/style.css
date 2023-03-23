@@ -1,0 +1,64 @@
+body{
+    /*background-color:rgb(51, 91, 213);
+    background-color: rgb(0, 143, 213);*/
+    background-color: rgba(0, 143, 213);
+    background-image:linear-gradient(to right, rgba(0, 143, 213), rgb(176, 108, 244));
+}
+div#areaTotal{
+    margin: auto;
+    width: 50%;
+    /*border: 3px solid white;*/
+    padding: 10px;
+}
+h1#tituloPrincipal{
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 5px;
+    text-align: center;
+    font-size: 300%;
+    mask-image: linear-gradient(to right, #f00, #00f);
+}
+div#campo_top{
+    border: 1px solid white;
+    width: 100%;
+    height: 50%;
+    background-color: azure;
+}
+div#menu{
+   margin-right: auto;
+    justify-content: center;
+   
+}
+ul#opcoes{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav#barraNav{
+   transform: translate(18%,50%);
+}
+li#op{
+    float: left;
+    padding: 10px;
+    margin: auto;
+}
+li#op a{
+    text-decoration: none;
+}
+li#op a:hover:not(#op){
+    background-color: rgb(18, 104, 46);
+}
+li#op{
+     background-color: #04AA6D;
+}
+li#op{
+    border-right: 1px solid #bbb;
+}
+
+img#img1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-top: 5%;
+   
+}
