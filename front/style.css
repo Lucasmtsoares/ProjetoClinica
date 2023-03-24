@@ -13,21 +13,21 @@ div#areaTotal{
 h1#tituloPrincipal{
     font-family: 'Courier New', Courier, monospace;
     padding-left: -5px;
-    text-align: center;
+    
     font-size: 300%;
     mask-image: linear-gradient(to right, #f00, #00f);
 }
 div#campo_top{
-    border: 1px solid white;
+   
     width: 100%;
-    
-   /* background-color: azure;*/
+  background-size: 100%;
+   
     background-color: rgb(15, 185, 100);
 }
 div#menu{
     margin-right: auto;
     justify-content: center;
-   
+    
 }
 ul#opcoes{
     list-style-type: none;
@@ -61,5 +61,6 @@ img#img1{
     margin-right: auto;
     width: 100%;
     padding-top: 5%;
+    
    
 }/**/
