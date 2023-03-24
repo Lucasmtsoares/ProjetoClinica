@@ -1,8 +1,8 @@
 body{
     /*background-color:rgb(51, 91, 213);
-    background-color: rgb(0, 143, 213);*/
-    background-color: rgba(0, 143, 213);
-    background-image:linear-gradient(to right, rgba(0, 143, 213), rgb(176, 108, 244));
+    background-color: rgb(0, 143, 213); 176, 108, 244*/
+    background-color: azure;
+    background-image:linear-gradient(to right, azure, rgb(226, 224, 224));
 }
 div#areaTotal{
     margin: auto;
@@ -12,7 +12,7 @@ div#areaTotal{
 }
 h1#tituloPrincipal{
     font-family: 'Courier New', Courier, monospace;
-    padding-left: 5px;
+    padding-left: -5px;
     text-align: center;
     font-size: 300%;
     mask-image: linear-gradient(to right, #f00, #00f);
@@ -20,17 +20,18 @@ h1#tituloPrincipal{
 div#campo_top{
     border: 1px solid white;
     width: 100%;
-    height: 50%;
-    background-color: azure;
+    
+   /* background-color: azure;*/
+    background-color: rgb(15, 185, 100);
 }
 div#menu{
-   margin-right: auto;
+    margin-right: auto;
     justify-content: center;
    
 }
 ul#opcoes{
     list-style-type: none;
-    margin: 0;
+    margin: 0%;
     padding: 0;
 }
 nav#barraNav{
