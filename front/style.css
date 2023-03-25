@@ -3,6 +3,10 @@ body{
     background-color: rgb(0, 143, 213); 176, 108, 244*/
     background-color: azure;
     background-image:linear-gradient(to right, azure, rgb(226, 224, 224));
+    margin: 0;
+    margin-top: 0;
+    padding:0;
+    padding-top: 0;
 }
 div#areaTotal{
     margin: auto;
@@ -12,15 +16,14 @@ div#areaTotal{
 }
 h1#tituloPrincipal{
     font-family: 'Courier New', Courier, monospace;
-    padding-left: -5px;
-    
+    padding: 5%;
     font-size: 300%;
     mask-image: linear-gradient(to right, #f00, #00f);
 }
 div#campo_top{
-   
+    
     width: 100%;
-  background-size: 100%;
+    
    
     background-color: rgb(15, 185, 100);
 }
