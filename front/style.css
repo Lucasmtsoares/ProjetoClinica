@@ -4,66 +4,78 @@ body{
     background-color: azure;
     background-image:linear-gradient(to right, azure, rgb(226, 224, 224));
     margin: 0;
-    margin-top: 0;
-    padding:0;
-    padding-top: 0;
-}
-div#areaTotal{
-    margin: auto;
-    width: 50%;
-    /*border: 3px solid white;*/
-    padding: 10px;
-}
-h1#tituloPrincipal{
-    font-family: 'Courier New', Courier, monospace;
-    padding: 5%;
-    font-size: 300%;
-    mask-image: linear-gradient(to right, #f00, #00f);
-}
-div#campo_top{
-    
-    width: 100%;
-    
-   
-    background-color: rgb(15, 185, 100);
-}
-div#menu{
-    margin-right: auto;
-    justify-content: center;
-    
-}
-ul#opcoes{
-    list-style-type: none;
-    margin: 0%;
     padding: 0;
 }
-nav#barraNav{
-   transform: translate(18%,50%);
+div#topo{
+   background-color: aqua;
+   padding: 25px;
 }
-li#op{
-    float: left;
-    padding: 10px;
-    margin: auto;
+h1#tituloPrincipal{
+    text-align: center;
 }
-li#op a{
+nav{
+    text-align: center;
+}
+nav ul{
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    padding: 0;
+}
+nav li{
+    display: inline-block;
+}
+nav a{
+    display: block;
     text-decoration: none;
+    padding: 5px;
 }
-li#op a:hover:not(#op){
-    background-color: rgb(18, 104, 46);
+nav a:hover{
+    text-decoration:underline;
 }
-li#op{
-     background-color: #04AA6D;
+div#areaTotal{
+    background-color: aquamarine;
+    margin: auto;
+    width: 50%;   
 }
-li#op{
-    border-right: 1px solid #bbb;
-}
-
 img#img1{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    padding-top: 5%;
-    
+    margin: 10px auto;
+    text-align: center;
    
-}/**/
+}
+.area_procedimentos{
+    background-color: brown;
+    border-radius: 10px;
+}
+.area_duvidas{
+    background-color: chartreuse;
+}
+.area-quem-somos{
+   background-color: cornflowerblue;
+}
+.areaDepoimentos{
+    background-color: darkmagenta;
+}
+/*nav{
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+  }
+  
+  nav a {
+    display: block;
+   
+    text-decoration: none;
+    color: #333;
+  }*/
+  
+
