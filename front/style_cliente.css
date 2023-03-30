@@ -1,8 +1,8 @@
 body{
     /*background-color:rgb(51, 91, 213);
     background-color: rgb(0, 143, 213); 176, 108, 244*/
-    background-color:aliceblue;
-   
+    background-color:rgb(4, 106, 190);
+    background-image: linear-gradient(to right, #7b7ea1, #2196f3);    
     margin: 0;
     padding: 0;
 }
@@ -22,20 +22,23 @@ nav ul{
     display: inline-block;
     margin: 10px;
     padding: 0;
+    
 }
 nav li{
     display: inline-block;
+   
 }
 nav a{
     display: block;
     text-decoration: none;
     padding: 5px;
+    color: azure;
 }
 nav a:hover{
     text-decoration:underline;
 }
 div#areaTotal{
-    background-color:aliceblue;
+  
     margin: auto;
     width: 50%;   
 }
@@ -43,6 +46,9 @@ img#img1{
     display: block;
     margin: 10px auto;
     text-align: center;
+    width: 80%;
+    border-radius: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
    
 }
 .area_procedimentos{
