@@ -1,6 +1,6 @@
 //paciente
 
-const menuButton = document.getElementById("titulo");
+const menuButton = document.getElementById("tituloPac");
 const formContainer = document.getElementById("cliente");
 const submitButton = document.getElementById("submit-button");
 const form = document.querySelector("form");

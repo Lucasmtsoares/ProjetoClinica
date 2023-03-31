@@ -14,7 +14,7 @@
    </div>
 
    <div id="menu">
-    <h3 id="titulo">Area Paciente</h3>
+    <h3 id="tituloPac">Area Paciente</h3>
     <div id="cliente">
         
         <ul id="list_pac">
@@ -60,40 +60,258 @@
         </ul>
     </div>
     
-    <h3 id="titulofun"> Area funcionario</h3>
+    <h3 id="tituloFun"> Area funcionario</h3>
+        <div id="sub_menu">
+            <ul>
+                <li><h4>Auxiliar de consultório dentário (ACD)</h4></li>
+                <li><h4>Dentista</h4></li>
+                <li><h4>Endodontista</h4></li>
+                <li><h4>Gerente de consultório</h4></li>
+                <li><h4>Higienista dental</h4></li>
+                <li><h4>Ortodontista</h4></li>
+                <li><h4>Protesista dentário</h4></li>
+                <li><h4>Recepcionista</h4></li>
+            </ul>
+        </div>
     <div id="areaFun">
         
         <ul id="list_fun">
             <li>
-                <h4 id="tituloFun">Cadastrar funcionario</h4>
+                <h4>Cadastrar funcionario</h4>
+
                 <ul id="list_fun2">
                     <li>
-                        <form>
-                            <label for="idNomeFunACD">Nome</label><br>
-                            <input type="text" id="idNomeFunACD" name="nomeFun" require><br>
-                            <label for="idCidadeFunACD">Cidade</label><br>
-                            <input type="text" id="idCidadeFunACD" name="cidadeFun" required><br>
-                            <label for="idRuaFunACD">Rua</label><br>
-                            <input type="text" id="idRuaFunACD" name="ruaFun" required><br>
-                            <label for="idNumFunACD">Nº rua</label><br>
-                            <input type="number" id="idNumFunACD" name="numFun" required><br>
-                            <label for="idTel1FunACD">Telefone (1)</label><br>
-                            <input type="tel" id="idTel1FunACD" name="telFun" required><br>
-                            <label for="idTel2FunACD">Telefone (2)</label><br>
-                            <input type="tel" id="idTel2FunACD" name="telFun2" required><br>
-                            <label for="idEmailFunACD">Email</label><br>
-                            <input type="email" id="idEmailFunACD" name="emailFun" required><br>
-                            <label for="idcpfFunACD">CFP</label><br>
-                            <input type="text" id="idcpfFunACD" name="cpfFun" required><br>
-                            <label for="idrgFunACD">RG</label><br>
-                            <input type="text" id="idrgFunACD" name="rgFun" required><br>
-                            <label for="idDataFunACD">Data de nascimento</label><br>
-                            <input type="date" id="idDataFunACD" name="datanascFun" required><br>
-                           
-                            <br>
-                            <input type="submit" value="Enviar" required>
+                        <h4>Auxiliar de consultório dentário (ACD)</h4>
+                        <div id="fun_ACD">
+                            <form action="onclick">
+                                <label for="idNomeFunACD">Nome</label><br>
+                                <input type="text" id="idNomeFunACD" name="nomeFun" require><br>
+                                <label for="idCidadeFunACD">Cidade</label><br>
+                                <input type="text" id="idCidadeFunACD" name="cidadeFun" required><br>
+                                <label for="idRuaFunACD">Rua</label><br>
+                                <input type="text" id="idRuaFunACD" name="ruaFun" required><br>
+                                <label for="idNumFunACD">Nº rua</label><br>
+                                <input type="number" id="idNumFunACD" name="numFun" required><br>
+                                <label for="idTel1FunACD">Telefone (1)</label><br>
+                                <input type="tel" id="idTel1FunACD" name="telFun" required><br>
+                                <label for="idTel2FunACD">Telefone (2)</label><br>
+                                <input type="tel" id="idTel2FunACD" name="telFun2" required><br>
+                                <label for="idEmailFunACD">Email</label><br>
+                                <input type="email" id="idEmailFunACD" name="emailFun" required><br>
+                                <label for="idcpfFunACD">CFP</label><br>
+                                <input type="text" id="idcpfFunACD" name="cpfFun" required><br>
+                                <label for="idrgFunACD">RG</label><br>
+                                <input type="text" id="idrgFunACD" name="rgFun" required><br>
+                                <label for="idDataFunACD">Data de nascimento</label><br>
+                                <input type="date" id="idDataFunACD" name="datanascFun" required><br>
+                            
+                                <br>
+                                <input type="submit" value="Enviar" required>
+                        </div>
                     </li>
-                   
+                    <li>
+                        <h4>Dentista</h4>
+                        <div id="fun_dent">
+                            <form>
+                                <label for="idNomeFunDent">Nome</label><br>
+                                <input type="text" id="idNomeFunDent" name="nomeFun" require><br>
+                                <label for="idCidadeFunDent">Cidade</label><br>
+                                <input type="text" id="idCidadeFunDent" name="cidadeFun" required><br>
+                                <label for="idRuaFunDent">Rua</label><br>
+                                <input type="text" id="idRuaFunDent" name="ruaFun" required><br>
+                                <label for="idNumFunDent">Nº rua</label><br>
+                                <input type="number" id="idNumFunDent" name="numFun" required><br>
+                                <label for="idTel1FunDent">Telefone (1)</label><br>
+                                <input type="tel" id="idTel1FunDent" name="telFun" required><br>
+                                <label for="idTel2FunDent">Telefone (2)</label><br>
+                                <input type="tel" id="idTel2FunDent" name="telFun2" required><br>
+                                <label for="idEmailFunDent">Email</label><br>
+                                <input type="email" id="idEmailFunDent" name="emailFun" required><br>
+                                <label for="idcpfFunDent">CFP</label><br>
+                                <input type="text" id="idcpfFunDent" name="cpfFun" required><br>
+                                <label for="idrgFunDent">RG</label><br>
+                                <input type="text" id="idrgFunDent" name="rgFun" required><br>
+                                <label for="idDataFun">Data de nascimento</label><br>
+                                <input type="date" id="idDataFunDent" name="datanascFun" required><br>
+                            
+                                <br>
+                                <input type="submit" value="Enviar" required>
+                        </div>
+                    </li>
+                    <li>
+                        <h4>Endodontista</h4>
+                        <div id="fun_Endo">
+                            <form>
+                                <label for="idNomeFunEndo">Nome</label><br>
+                                <input type="text" id="idNomeFunEndo" name="nomeFun" require><br>
+                                <label for="idCidadeFunEndo">Cidade</label><br>
+                                <input type="text" id="idCidadeFunEndo" name="cidadeFun" required><br>
+                                <label for="idRuaFunEndo">Rua</label><br>
+                                <input type="text" id="idRuaFunEndo" name="ruaFun" required><br>
+                                <label for="idNumFunEndo">Nº rua</label><br>
+                                <input type="number" id="idNumFunEndo" name="numFun" required><br>
+                                <label for="idTel1FunEndo">Telefone (1)</label><br>
+                                <input type="tel" id="idTel1FunEndo" name="telFun" required><br>
+                                <label for="idTel2FunEndo">Telefone (2)</label><br>
+                                <input type="tel" id="idTel2FunEndo" name="telFun2" required><br>
+                                <label for="idEmailFunEndo">Email</label><br>
+                                <input type="email" id="idEmailFunEndo" name="emailFun" required><br>
+                                <label for="idcpfFunEndo">CFP</label><br>
+                                <input type="text" id="idcpfFunEndo" name="cpfFun" required><br>
+                                <label for="idrgFunEndo">RG</label><br>
+                                <input type="text" id="idrgFunEndo" name="rgFun" required><br>
+                                <label for="idDataFunEndo">Data de nascimento</label><br>
+                                <input type="date" id="idDataFunEndo" name="datanascFun" required><br>
+                            
+                                <br>
+                                <input type="submit" value="Enviar" required>
+                        </div>
+                    </li>
+                    <li>
+                        <h4>Gerente de consultório</h4>
+                        <div id="fun_ger">
+                            <form>
+                                <label for="idNomeFunGerCons">Nome</label><br>
+                                <input type="text" id="idNomeFunGerCons" name="nomeFun" require><br>
+                                <label for="idCidadeFunGerCons">Cidade</label><br>
+                                <input type="text" id="idCidadeFunGerCons" name="cidadeFun" required><br>
+                                <label for="idRuaFunGerCons">Rua</label><br>
+                                <input type="text" id="idRuaFunGerCons" name="ruaFun" required><br>
+                                <label for="idNumFunGerCons">Nº rua</label><br>
+                                <input type="number" id="idNumFunGerCons" name="numFun" required><br>
+                                <label for="idTel1FunGerCons">Telefone (1)</label><br>
+                                <input type="tel" id="idTel1FunGerCons" name="telFun" required><br>
+                                <label for="idTel2FunGerCons">Telefone (2)</label><br>
+                                <input type="tel" id="idTel2FunGerCons" name="telFun2" required><br>
+                                <label for="idEmailFunGerCons">Email</label><br>
+                                <input type="email" id="idEmailFunGerCons" name="emailFun" required><br>
+                                <label for="idcpfFunGerCons">CFP</label><br>
+                                <input type="text" id="idcpfFunGerCons" name="cpfFun" required><br>
+                                <label for="idrgFunGerCons">RG</label><br>
+                                <input type="text" id="idrgFunGerCons" name="rgFun" required><br>
+                                <label for="idDataFunGerCons">Data de nascimento</label><br>
+                                <input type="date" id="idDataFunGerCons" name="datanascFun" required><br>
+                            
+                                <br>
+                                <input type="submit" value="Enviar" required>
+                        </div>
+                    </li>
+                    <li>
+                        <h4>Higienista dental</h4>
+                        <div id="fun_hig">
+                            <form>
+                                <label for="idNomeFunHig">Nome</label><br>
+                                <input type="text" id="idNomeFunHig" name="nomeFun" require><br>
+                                <label for="idCidadeFunHig">Cidade</label><br>
+                                <input type="text" id="idCidadeFunHig" name="cidadeFun" required><br>
+                                <label for="idRuaFunHig">Rua</label><br>
+                                <input type="text" id="idRuaFunHig" name="ruaFun" required><br>
+                                <label for="idNumFunHig">Nº rua</label><br>
+                                <input type="number" id="idNumFunHig" name="numFun" required><br>
+                                <label for="idTel1FunHig">Telefone (1)</label><br>
+                                <input type="tel" id="idTel1FunHig" name="telFun" required><br>
+                                <label for="idTel2FunHig">Telefone (2)</label><br>
+                                <input type="tel" id="idTel2FunHig" name="telFun2" required><br>
+                                <label for="idEmailFunHig">Email</label><br>
+                                <input type="email" id="idEmailFunHig" name="emailFun" required><br>
+                                <label for="idcpfFunHig">CFP</label><br>
+                                <input type="text" id="idcpfFunHig" name="cpfFun" required><br>
+                                <label for="idrgFunHig">RG</label><br>
+                                <input type="text" id="idrgFunHig" name="rgFun" required><br>
+                                <label for="idDataFunHig">Data de nascimento</label><br>
+                                <input type="date" id="idDataFunHig" name="datanascFun" required><br>
+                            
+                                <br>
+                                <input type="submit" value="Enviar" required>
+                        </div>
+                    </li>
+                    <li>
+                        <h4>Ortodontista</h4>
+                        <div id="fun_orto">
+                            <form>
+                                <label for="idNomeFunOrtod">Nome</label><br>
+                                <input type="text" id="idNomeFunOrtod" name="nomeFun" require><br>
+                                <label for="idCidadeFunOrtod">Cidade</label><br>
+                                <input type="text" id="idCidadeFunOrtod" name="cidadeFun" required><br>
+                                <label for="idRuaFunOrtod">Rua</label><br>
+                                <input type="text" id="idRuaFunOrtod" name="ruaFun" required><br>
+                                <label for="idNumFunOrtod">Nº rua</label><br>
+                                <input type="number" id="idNumFunOrtod" name="numFun" required><br>
+                                <label for="idTel1FunOrtod">Telefone (1)</label><br>
+                                <input type="tel" id="idTel1FunOrtod" name="telFun" required><br>
+                                <label for="idTel2FunOrtod">Telefone (2)</label><br>
+                                <input type="tel" id="idTel2FunOrtod" name="telFun2" required><br>
+                                <label for="idEmailFunOrtod">Email</label><br>
+                                <input type="email" id="idEmailFunOrtod" name="emailFun" required><br>
+                                <label for="idcpfFunOrtod">CFP</label><br>
+                                <input type="text" id="idcpfFunOrtod" name="cpfFun" required><br>
+                                <label for="idrgFunOrtod">RG</label><br>
+                                <input type="text" id="idrgFunOrtod" name="rgFun" required><br>
+                                <label for="idDataFunOrtod">Data de nascimento</label><br>
+                                <input type="date" id="idDataFunOrtod" name="datanascFun" required><br>
+                            
+                                <br>
+                                <input type="submit" value="Enviar" required>
+                        </div>
+                    </li>
+                    <li>
+                        <h4>Protesista dentário</h4>
+                        <div id="fun_prot">
+                            <form>
+                                <label for="idNomeFunProt">Nome</label><br>
+                                <input type="text" id="idNomeFunProt" name="nomeFun" require><br>
+                                <label for="idCidadeFunProt">Cidade</label><br>
+                                <input type="text" id="idCidadeFunProt" name="cidadeFun" required><br>
+                                <label for="idRuaFunProt">Rua</label><br>
+                                <input type="text" id="idRuaFunProt" name="ruaFun" required><br>
+                                <label for="idNumFunProt">Nº rua</label><br>
+                                <input type="number" id="idNumFunProt" name="numFun" required><br>
+                                <label for="idTel1FunProt">Telefone (1)</label><br>
+                                <input type="tel" id="idTel1FunProt" name="telFun" required><br>
+                                <label for="idTel2FunProt">Telefone (2)</label><br>
+                                <input type="tel" id="idTel2FunProt" name="telFun2" required><br>
+                                <label for="idEmailFunProt">Email</label><br>
+                                <input type="email" id="idEmailFunProt" name="emailFun" required><br>
+                                <label for="idcpfFunProt">CFP</label><br>
+                                <input type="text" id="idcpfFunProt" name="cpfFun" required><br>
+                                <label for="idrgFunProt">RG</label><br>
+                                <input type="text" id="idrgFunProt" name="rgFun" required><br>
+                                <label for="idDataFunProt">Data de nascimento</label><br>
+                                <input type="date" id="idDataFunProt" name="datanascFun" required><br>
+                            
+                                <br>
+                                <input type="submit" value="Enviar" required>
+                        </div>
+                    </li>
+                    <li>
+                        <h4>Recepcionista</h4>
+                        <div id="fun_recep">
+                            <form>
+                                <label for="idNomeFunRecep">Nome</label><br>
+                                <input type="text" id="idNomeFunRecep" name="nomeFun" require><br>
+                                <label for="idCidadeFunRecep">Cidade</label><br>
+                                <input type="text" id="idCidadeFunRecep" name="cidadeFun" required><br>
+                                <label for="idRuaFunRecep">Rua</label><br>
+                                <input type="text" id="idRuaFunRecep" name="ruaFun" required><br>
+                                <label for="idNumFunRecep">Nº rua</label><br>
+                                <input type="number" id="idNumFunRecep" name="numFun" required><br>
+                                <label for="idTel1FunRecep">Telefone (1)</label><br>
+                                <input type="tel" id="idTel1FunRecep" name="telFun" required><br>
+                                <label for="idTel2FunRecep">Telefone (2)</label><br>
+                                <input type="tel" id="idTel2FunRecep" name="telFun2" required><br>
+                                <label for="idEmailFunRecep">Email</label><br>
+                                <input type="email" id="idEmailFunRecep" name="emailFun" required><br>
+                                <label for="idcpfFunRecep">CFP</label><br>
+                                <input type="text" id="idcpfFunRecep" name="cpfFun" required><br>
+                                <label for="idrgFunRecep">RG</label><br>
+                                <input type="text" id="idrgFunRecep" name="rgFun" required><br>
+                                <label for="idDataFunRecep">Data de nascimento</label><br>
+                                <input type="date" id="idDataFunRecep" name="datanascFun" required><br>
+                            
+                                <br>
+                                <input type="submit" value="Enviar" required>
+                        </div>
+                    </li>
                 </ul>
               
             </li>
@@ -274,207 +492,3 @@
    <script src="script.js"></script>
 </body>
 </html>
-
-<!-- <li>
-                        <h4>Dentista</h4>
-                        <form action="onclick">
-                            <label for="idNomeFunDent">Nome</label><br>
-                            <input type="text" id="idNomeFunDent" name="nomeFun" require><br>
-                            <label for="idCidadeFunDent">Cidade</label><br>
-                            <input type="text" id="idCidadeFunDent" name="cidadeFun" required><br>
-                            <label for="idRuaFunDent">Rua</label><br>
-                            <input type="text" id="idRuaFunDent" name="ruaFun" required><br>
-                            <label for="idNumFunDent">Nº rua</label><br>
-                            <input type="number" id="idNumFunDent" name="numFun" required><br>
-                            <label for="idTel1FunDent">Telefone (1)</label><br>
-                            <input type="tel" id="idTel1FunDent" name="telFun" required><br>
-                            <label for="idTel2FunDent">Telefone (2)</label><br>
-                            <input type="tel" id="idTel2FunDent" name="telFun2" required><br>
-                            <label for="idEmailFunDent">Email</label><br>
-                            <input type="email" id="idEmailFunDent" name="emailFun" required><br>
-                            <label for="idcpfFunDent">CFP</label><br>
-                            <input type="text" id="idcpfFunDent" name="cpfFun" required><br>
-                            <label for="idrgFunDent">RG</label><br>
-                            <input type="text" id="idrgFunDent" name="rgFun" required><br>
-                            <label for="idDataFun">Data de nascimento</label><br>
-                            <input type="date" id="idDataFunDent" name="datanascFun" required><br>
-                           
-                            <br>
-                            <input type="submit" value="Enviar" required>
-                    </li>
-                    <li>
-                        <h4>Endodontista</h4>
-                        <form action="onclick">
-                            <label for="idNomeFunEndo">Nome</label><br>
-                            <input type="text" id="idNomeFunEndo" name="nomeFun" require><br>
-                            <label for="idCidadeFunEndo">Cidade</label><br>
-                            <input type="text" id="idCidadeFunEndo" name="cidadeFun" required><br>
-                            <label for="idRuaFunEndo">Rua</label><br>
-                            <input type="text" id="idRuaFunEndo" name="ruaFun" required><br>
-                            <label for="idNumFunEndo">Nº rua</label><br>
-                            <input type="number" id="idNumFunEndo" name="numFun" required><br>
-                            <label for="idTel1FunEndo">Telefone (1)</label><br>
-                            <input type="tel" id="idTel1FunEndo" name="telFun" required><br>
-                            <label for="idTel2FunEndo">Telefone (2)</label><br>
-                            <input type="tel" id="idTel2FunEndo" name="telFun2" required><br>
-                            <label for="idEmailFunEndo">Email</label><br>
-                            <input type="email" id="idEmailFunEndo" name="emailFun" required><br>
-                            <label for="idcpfFunEndo">CFP</label><br>
-                            <input type="text" id="idcpfFunEndo" name="cpfFun" required><br>
-                            <label for="idrgFunEndo">RG</label><br>
-                            <input type="text" id="idrgFunEndo" name="rgFun" required><br>
-                            <label for="idDataFunEndo">Data de nascimento</label><br>
-                            <input type="date" id="idDataFunEndo" name="datanascFun" required><br>
-                           
-                            <br>
-                            <input type="submit" value="Enviar" required>
-                    </li>
-                    <li>
-                        <h4>Gerente de consultório</h4>
-                        <form action="onclick">
-                            <label for="idNomeFunGerCons">Nome</label><br>
-                            <input type="text" id="idNomeFunGerCons" name="nomeFun" require><br>
-                            <label for="idCidadeFunGerCons">Cidade</label><br>
-                            <input type="text" id="idCidadeFunGerCons" name="cidadeFun" required><br>
-                            <label for="idRuaFunGerCons">Rua</label><br>
-                            <input type="text" id="idRuaFunGerCons" name="ruaFun" required><br>
-                            <label for="idNumFunGerCons">Nº rua</label><br>
-                            <input type="number" id="idNumFunGerCons" name="numFun" required><br>
-                            <label for="idTel1FunGerCons">Telefone (1)</label><br>
-                            <input type="tel" id="idTel1FunGerCons" name="telFun" required><br>
-                            <label for="idTel2FunGerCons">Telefone (2)</label><br>
-                            <input type="tel" id="idTel2FunGerCons" name="telFun2" required><br>
-                            <label for="idEmailFunGerCons">Email</label><br>
-                            <input type="email" id="idEmailFunGerCons" name="emailFun" required><br>
-                            <label for="idcpfFunGerCons">CFP</label><br>
-                            <input type="text" id="idcpfFunGerCons" name="cpfFun" required><br>
-                            <label for="idrgFunGerCons">RG</label><br>
-                            <input type="text" id="idrgFunGerCons" name="rgFun" required><br>
-                            <label for="idDataFunGerCons">Data de nascimento</label><br>
-                            <input type="date" id="idDataFunGerCons" name="datanascFun" required><br>
-                           
-                            <br>
-                            <input type="submit" value="Enviar" required>
-                    </li>
-                    <li>
-                        <h4>Higienista dental</h4>
-                        <form action="onclick">
-                            <label for="idNomeFunHig">Nome</label><br>
-                            <input type="text" id="idNomeFunHig" name="nomeFun" require><br>
-                            <label for="idCidadeFunHig">Cidade</label><br>
-                            <input type="text" id="idCidadeFunHig" name="cidadeFun" required><br>
-                            <label for="idRuaFunHig">Rua</label><br>
-                            <input type="text" id="idRuaFunHig" name="ruaFun" required><br>
-                            <label for="idNumFunHig">Nº rua</label><br>
-                            <input type="number" id="idNumFunHig" name="numFun" required><br>
-                            <label for="idTel1FunHig">Telefone (1)</label><br>
-                            <input type="tel" id="idTel1FunHig" name="telFun" required><br>
-                            <label for="idTel2FunHig">Telefone (2)</label><br>
-                            <input type="tel" id="idTel2FunHig" name="telFun2" required><br>
-                            <label for="idEmailFunHig">Email</label><br>
-                            <input type="email" id="idEmailFunHig" name="emailFun" required><br>
-                            <label for="idcpfFunHig">CFP</label><br>
-                            <input type="text" id="idcpfFunHig" name="cpfFun" required><br>
-                            <label for="idrgFunHig">RG</label><br>
-                            <input type="text" id="idrgFunHig" name="rgFun" required><br>
-                            <label for="idDataFunHig">Data de nascimento</label><br>
-                            <input type="date" id="idDataFunHig" name="datanascFun" required><br>
-                           
-                            <br>
-                            <input type="submit" value="Enviar" required>
-                    </li>
-                    <li>
-                        <h4>Ortodontista</h4>
-                        <form action="onclick">
-                            <label for="idNomeFunOrtod">Nome</label><br>
-                            <input type="text" id="idNomeFunOrtod" name="nomeFun" require><br>
-                            <label for="idCidadeFunOrtod">Cidade</label><br>
-                            <input type="text" id="idCidadeFunOrtod" name="cidadeFun" required><br>
-                            <label for="idRuaFunOrtod">Rua</label><br>
-                            <input type="text" id="idRuaFunOrtod" name="ruaFun" required><br>
-                            <label for="idNumFunOrtod">Nº rua</label><br>
-                            <input type="number" id="idNumFunOrtod" name="numFun" required><br>
-                            <label for="idTel1FunOrtod">Telefone (1)</label><br>
-                            <input type="tel" id="idTel1FunOrtod" name="telFun" required><br>
-                            <label for="idTel2FunOrtod">Telefone (2)</label><br>
-                            <input type="tel" id="idTel2FunOrtod" name="telFun2" required><br>
-                            <label for="idEmailFunOrtod">Email</label><br>
-                            <input type="email" id="idEmailFunOrtod" name="emailFun" required><br>
-                            <label for="idcpfFunOrtod">CFP</label><br>
-                            <input type="text" id="idcpfFunOrtod" name="cpfFun" required><br>
-                            <label for="idrgFunOrtod">RG</label><br>
-                            <input type="text" id="idrgFunOrtod" name="rgFun" required><br>
-                            <label for="idDataFunOrtod">Data de nascimento</label><br>
-                            <input type="date" id="idDataFunOrtod" name="datanascFun" required><br>
-                           
-                            <br>
-                            <input type="submit" value="Enviar" required>
-                    </li>
-                    <li>
-                        <h4>Protesista dentário</h4>
-                        <form action="onclick">
-                            <label for="idNomeFunProt">Nome</label><br>
-                            <input type="text" id="idNomeFunProt" name="nomeFun" require><br>
-                            <label for="idCidadeFunProt">Cidade</label><br>
-                            <input type="text" id="idCidadeFunProt" name="cidadeFun" required><br>
-                            <label for="idRuaFunProt">Rua</label><br>
-                            <input type="text" id="idRuaFunProt" name="ruaFun" required><br>
-                            <label for="idNumFunProt">Nº rua</label><br>
-                            <input type="number" id="idNumFunProt" name="numFun" required><br>
-                            <label for="idTel1FunProt">Telefone (1)</label><br>
-                            <input type="tel" id="idTel1FunProt" name="telFun" required><br>
-                            <label for="idTel2FunProt">Telefone (2)</label><br>
-                            <input type="tel" id="idTel2FunProt" name="telFun2" required><br>
-                            <label for="idEmailFunProt">Email</label><br>
-                            <input type="email" id="idEmailFunProt" name="emailFun" required><br>
-                            <label for="idcpfFunProt">CFP</label><br>
-                            <input type="text" id="idcpfFunProt" name="cpfFun" required><br>
-                            <label for="idrgFunProt">RG</label><br>
-                            <input type="text" id="idrgFunProt" name="rgFun" required><br>
-                            <label for="idDataFunProt">Data de nascimento</label><br>
-                            <input type="date" id="idDataFunProt" name="datanascFun" required><br>
-                           
-                            <br>
-                            <input type="submit" value="Enviar" required>
-                    </li>
-                    <li>
-                        <h4>Recepcionista</h4>
-                        <form action="onclick">
-                            <label for="idNomeFunRecep">Nome</label><br>
-                            <input type="text" id="idNomeFunRecep" name="nomeFun" require><br>
-                            <label for="idCidadeFunRecep">Cidade</label><br>
-                            <input type="text" id="idCidadeFunRecep" name="cidadeFun" required><br>
-                            <label for="idRuaFunRecep">Rua</label><br>
-                            <input type="text" id="idRuaFunRecep" name="ruaFun" required><br>
-                            <label for="idNumFunRecep">Nº rua</label><br>
-                            <input type="number" id="idNumFunRecep" name="numFun" required><br>
-                            <label for="idTel1FunRecep">Telefone (1)</label><br>
-                            <input type="tel" id="idTel1FunRecep" name="telFun" required><br>
-                            <label for="idTel2FunRecep">Telefone (2)</label><br>
-                            <input type="tel" id="idTel2FunRecep" name="telFun2" required><br>
-                            <label for="idEmailFunRecep">Email</label><br>
-                            <input type="email" id="idEmailFunRecep" name="emailFun" required><br>
-                            <label for="idcpfFunRecep">CFP</label><br>
-                            <input type="text" id="idcpfFunRecep" name="cpfFun" required><br>
-                            <label for="idrgFunRecep">RG</label><br>
-                            <input type="text" id="idrgFunRecep" name="rgFun" required><br>
-                            <label for="idDataFunRecep">Data de nascimento</label><br>
-                            <input type="date" id="idDataFunRecep" name="datanascFun" required><br>
-                           
-                            <br>
-                            <input type="submit" value="Enviar" required>
-                    </li>
-                </ul>
-              
-            </li>
-            <li>
-                <h4>Deletar funcionario</h4>
-            </li>
-            <li>
-                <h4>Listar funcionarios</h4>
-            </li>
-            <li>
-                <h4>Atualizar funcionario</h4>
-            </li>
-        </ul>
-    </div>-->

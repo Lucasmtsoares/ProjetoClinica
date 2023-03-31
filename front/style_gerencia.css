@@ -14,18 +14,21 @@ div#menu{
     width: 20%;
 }
 
-#cliente{
-    border: 1px solid;
 
-}
-#titulo{
-    border: 1px solid;
-}
 
 /*forms*/
 
 /*paciente*/
 
+#tituloPac{
+  border: 1px solid;
+ 
+}
+#cliente{
+  border: 1px solid;
+  background-color: black;
+  width: 350%;
+}
 #cliente {
     display: none;
     position: absolute;
@@ -39,21 +42,21 @@ div#menu{
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   }
-#cliente{
+#cliente{/*altura e distancia do topo da pagina do forms do paciente*/
    height: 400px;
    padding-top: 20px;
 }
  
   
-  #cliente label {
+ #cliente label {/*responsavel pela distancia entre os campos do foms*/
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 1px;
   }
   
   
-  #submitPac{
+  #submitPac{/*configuração do botão*/
     display: block;
-    width: 100%;
+    width: 150%;
     padding: 10px;
     background-color: #007bff;
     color: #fff;
@@ -63,8 +66,9 @@ div#menu{
   }
 
 
-  /*funcionario*/
+  /*funcionarios*/
 
+/*titulo e botão*/
 #tituloFun{
     border: 1px solid;
 }
@@ -72,8 +76,20 @@ div#menu{
     border: 1px solid;
 }
 
+/*trabalhando no sub menu*/
+#sub_menu li{
+  list-style: none;
+  border: 1px solid;
+  width: 220px;
+  height: 35px;
+ object-position: left;
+}
+#sub_menu h4{
+  font-size: 12px;
+}
+/*area de form do funcionario aux. de consultorio ACD*/
 #areaFun{
-    display: none;
+   
     position: absolute;
     top: 50%;
     left: 50%;
