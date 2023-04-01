@@ -67,25 +67,42 @@ div#menu{
 
 
   /*funcionarios*/
-
 /*titulo e botão*/
 #tituloFun{
     border: 1px solid;
+    display: flex;
+   
+    align-items: center;
 }
+#iconOP{
+  display: inline;
+  float: right;
+  width: 10px;
+  height: 12px;
+  padding-top: 3px;
+}
+#tituloFun h3 {
+  margin-right: 10px;
+}
+
 #areaFun{
     border: 1px solid;
 }
 
 /*trabalhando no sub menu*/
-#sub_menu li{
+#sub_menuFun li{
   list-style: none;
+  text-decoration: none;
   border: 1px solid;
   width: 220px;
   height: 35px;
- object-position: left;
+  object-position: left;
 }
-#sub_menu h4{
+#sub_menuFun h4{
   font-size: 12px;
+}
+#sub_menuFun{
+  display: none;
 }
 /*area de form do funcionario aux. de consultorio ACD*/
 #areaFun{

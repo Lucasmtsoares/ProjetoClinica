@@ -18,25 +18,22 @@ submitButton.addEventListener("click", (event) => {
   }
 });
 
+
 //funcionario
 
-const menuButtonFun = document.getElementById("titulo;fun");
-const formContainerFun = document.getElementById("areaFun");
-const submitButtonFun = document.getElementById("submit-button");
-const formFun = document.querySelector("form");
+//lista de opcoes para o funcionario
+var opcoesVisiveis = false;
 
-menuButton.addEventListener("click", () => {
-  formContainer.style.display = "block";
-});
-
-submitButton.addEventListener("click", (event) => {
-  event.preventDefault();
-  if (form.checkValidity()) {
-    formContainer.style.display = "none";
+function mostrarOpcoes(){
+  var op = document.getElementById("sub_menuFun");
+  if (opcoesVisiveis) {
+    op.style.display = "none";
+    opcoesVisiveis = false;
   } else {
-    alert("Por favor, preencha todos os campos obrigatórios.");
+    op.style.display = "block";
+    opcoesVisiveis = true;
   }
-});
+}
 
 //consulta
 
