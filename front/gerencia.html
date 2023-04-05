@@ -66,15 +66,237 @@
     </div>
         <!--<a href="https://www.flaticon.com/br/icones-gratis/baixar" title="baixar ícones">Baixar ícones criados por Freepik - Flaticon</a>-->
         <div id="sub_menuFun">
-            <ul>
+            <ul id="sub_menu2">
                 <li><h4>Cadastrar funcionario</h4></li>
+                  
                 <li><h4>Deletar funcionario</h4></li>
                 <li><h4>Listar funcionarios</h4></li>
                 <li><h4>Atualizar funcionario</h4></li>
         
             </ul>
         </div>
-    <div id="areaFun">
+   
+    <div id="areaConsulta">
+        <h3>Area consulta</h3>
+        <ul>
+            <li>
+                <h4>Cadastrar consulta</h4>
+                <form>
+                    <label for="idConsulta">Tratamento</label><br>
+                    <input type="text" id="idConsulta" name="tipoTratamento" required><br>
+                    <label for="idDataCons">Data</label><br>
+                    <input type="date" id="idDataCons" name="dataCons" required><br>
+                    <label for="idHoraCons">Horário</label><br>
+                    <input type="time" id="idHoraCons" name="horaCons" required><br>
+                    <label for="idNomePacCons">Nome do paciente</label><br>
+                    <input type="text" id="idNomePacCosn" name="nomePac" required><br>
+                    <label for="idDentistaCosn">Nome do dentista</label><br>
+                    <input type="text" id="idDentistaCons" name="nomeDoDentiista" required><br>
+                    <label for="idnumConsulta">Nº da consulta</label>
+                    <input type="number" id="idnumConsulta" name="numDaConsulta" required><br>
+                    <label for="idDescricaoCons">Descrição da consulta</label><br>
+                    <input type="text" id="idDescricaoCons" name="descDaConsulta" required><br>
+                    <label for="idnomeRecep">Nome do Recepcionista</label><br>
+                    <input type="text" id="idnomeRecep" name="nomeRecep" required><br>
+                    <label for="id"></label>
+                    <label for="idValorCons">Valor da consulta</label><br>
+                    <input type="number" id="idValorCons" name="valorCons" step="10" min="50.00" required><br>
+                    <label for="idNumSala">Nº da sala</label><br>
+                    <input type="number" id="idNumSala" name="numSala" required><br>
+
+                    <br>
+                    <input type="submit" value="Enviar" required>
+                    
+                </form>
+            </li>
+            <li>
+                <h4>Deletar consulta</h4>
+            </li>
+            <li>
+                <h4>Listar consultas</h4>
+            </li>
+            <li>
+                <h4>Atualizar consulta</h4>
+            </li>
+        </ul>
+    </div>
+    <div id="tratamento">
+        <h3>Tratamentos</h3>
+        <ul>
+            <li>
+                <h4>Cadastrar tratamento</h4>
+                <form>
+                    <label for="idCodTrat">Codigo do tratamento</label><br>
+                    <input type="number" id="idCodTrat" name="codTrat" required><br>
+                    <label for="idNomeTrat">Nome do tratamento</label><br>
+                    <input type="text" id="idNomeTrat" name="NomeTrat" required><br>
+                    <label for="idDesc">Descrição</label><br>
+                    <input type="text" id="idDesc" name="descTrat" required><br>
+                    <label for="idDuracaotrat">Duração (em semanas)</label><br>
+                    <input type="number" id="idDuracaotrat" name="duracaoTrat" step="1" min="1" required><br>
+                    <label for="idValorTrat">Valor do tratamento</label><br>
+                    <input type="number" id="idValorTrat" name="valorTrat" step="10" min="50" required><br>
+                    <label for="idInstrut">Instruções pós-tratamento</label><br>
+                    <input type="text" id="idInstrut" name="instrutPac" required><br>
+                    <label for="idMed">Medicação recomendada</label><br>
+                    <input type="text" id="idMed" name="med" required><br>
+                    <label for="idFerram">Instrumentos dentários</label><br>
+                    <input type="text" id="idFerram" name="Ferram" required><br>
+                    <label for="idExames">Exames recomendados</label><br>
+                    <input type="text" id="idExames" name="exames" required><br>
+                    <label for="idDieta">Dieta recomendada</label><br>
+                    <input type="text" id="idDieta" name="dieta" required><br>
+
+                    <br>
+                    <input type="submit" value="Enviar" required>
+                </form>
+            </li>
+            <li>
+                <h4>Deletar tratamento</h4>
+            </li>
+            <li>
+                <h4>Listar tratamentos</h4>
+            </li>
+            <li>
+                <h4>Atualizar tratamento</h4>
+            </li>
+        </ul>
+    </div>
+    <div id="forncedor">
+        <h3>Fornecedor</h3>
+        <ul>
+            <li>
+                <h4>Cadastrar fornecedor</h4>
+                <form>
+                    <label for="idNomeForn">Nome</label><br>
+                    <input type="text" id="idNomeForn" name="nomeForn" required><br>
+                    <label for="idTel1Forn">Telefone (1)</label><br>
+                    <input type="tel" id="idTel1Forn" name="tel1Forn" required><br>
+                    <label for="idTel2Forn">Telefoen (2)</label><br>            
+                    <input type="tel" id="idTel2Forn" name="te2Forn" required><br>
+                    <label for="idEmailForn">Email</label><br>
+                    <input type="email" id="idEmailForn" name="emailForn" required><br>
+                    <label for="idCidForn">Cidade</label><br>
+                    <input type="text" id="idCidForn" name="cidadeForn" required><br>
+                    <label for="idRuaForn">Rua</label><br>
+                    <input type="text" id="idRuaForn" name="ruaForn" required><br>
+                    <label for="idNumForn">Nº</label><br>
+                    <input type="number" id="idNumForn" name="numFor" required><br>
+                    <label for="idCNPJForn">CNPJ</label><br>
+                    <input type="text" id="idCNPJForn" name="cnpjForn" required><br>
+                    <label for="idProdutoForn">Produto Fornecido</label><br>
+                    <input type="text" id="idProdutoForn" name="produtoForn" required><br>
+                    <label for="idDesForn">Descrição</label><br>
+                    <input type="text" id="idDescForn" name="descForn" required><br>
+
+                    <br>
+                    <input type="submit" value="Enviar" required>
+                </form>
+            </li>
+            <li>
+                <h4>Deletar fonecedor</h4>
+            </li>
+            <li>
+                <h4>Listar fonecedores</h4>
+            </li>
+            <li>
+                <h4>Atualizar fornecedor</h4>
+            </li>
+        </ul>
+    </div>
+    <div id="estoque">
+        <h3>Materiais</h3>
+        <ul>
+            <li>
+                <h4>Cadastrar material</h4>
+                <form>
+                    <label for="idNomeMT">Nome</label><br>
+                    <input type="text" id="idNomeMT" name="nomeMT" required><br>
+                    <label for="idQTmaterial">Quantidade</label><br>
+                    <input type="number" id="idQTmaterial" name="QTmaterial" required><br>
+                    <label for="idValorMT">Valor</label><br>
+                    <input type="number" id="idValorMT" name="valorMT" required><br>
+                    <label for="idDescMT">Descrição</label><br>
+                    <input type="text" id="idDescMT" name="descMT" required><br>
+                    <label for="idTipoMat">Tipo de material</label><br>
+                    <input type="text" id="idTipoMat" name="tipoMat" required><br>
+                    <label for="idTratUso">Tratamento utilizado</label><br>
+                    <input type="text" id="idTratUso" name="tratUso" required><br>
+                    <label for="idFornMat">Fornecedor</label><br>
+                    <input type="text" id="idFornMat" name="fornMat" required><br>
+                    <label for="idMarcaMat">Marca do material</label><br>
+                    <input type="text" id="idMarcaMat" name="marcaMat" required><br>
+                    <label for="idCompMat">Composição do material</label><br>
+                    <input type="text" id="idCompMat" name="compMat" required><br>
+                    <label for="idDTValidade">Data de validade</label><br>
+                    <input type="date" id="idDTValidade" name="dataVali" required><br>
+                   
+
+                    <br>
+                    <input type="submit" value="Enviar" required>
+                </form>
+            </li>
+            <li>
+                <h4>Deletar material</h4>
+            </li>
+            <li>
+                <h4>Listar material</h4>
+            </li>
+            <li>
+                <h4>Atualizar material</h4>
+            </li>
+        </ul>
+    </div>
+    
+    <div id="fatura">
+        <h3>Fatura</h3>
+        <ul>
+            <li>
+                <h4>Extrair fatura</h4>
+                <form>
+                    <label for="idNumFat">Nº da fatura</label><br>
+                    <input type="number" id="idNumFat" name="numFat" required><br>
+                    <label for="idDataFat">Data</label><br>
+                    <input type="date" id="idDataFat" name="dataFat" required><br>
+                    <label for="idHoraFat">Hora</label><br>
+                    <input type="time" id="idHoraFat" name="horaFat" required><br>
+                    <label for="idNomePacFat">Paciente</label><br>
+                    <input type="text" id="idNomePacFat" name="nomePacFat" required><br>
+                    <label for="iRecFat">Recebedor</label><br>
+                    <input type="text" id="iRecFat" name="recebedorFat" required><br>
+                    <label for="idProcFat">Procediementos realizados</label><br>
+                    <input type="text" id="idProcFat" name="procedimentosFat" required><br>
+                    <label for="idDescFAt">Desconto</label><br>
+                    <input type="number" id="idDescFAt" name="descontoFat" required><br>
+                    <label for="idTotProcFat">Total de cada procedimento</label><br>
+                    <input type="text" id="idTotProcFat" name="totCadaProcedimento" required><br>
+                    <label for="idNumConsFat">Nº da consulta</label><br>
+                    <input type="number" id="idNumConsFat" name="numPacFat" required><br>
+                    <label for="idTotalFat">Total</label><br>
+                    <input type="number" id="idTotalFat" name="totalFat" required><br>
+
+                    <br>
+                    <input type="submit" value="Enviar" required>
+
+                </form>
+            </li>
+            <li>
+                <h4>Deletar fatura</h4>
+            </li>
+            <li>
+                <h4>Listar fatura</h4>
+            </li>
+            <li>
+                <h4>Atualizar fatura</h4>
+            </li>
+        </ul>
+    </div>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>
+
+<!-- <div id="areaFun">
         
         <ul id="list_fun">
             <li>
@@ -84,7 +306,7 @@
                     <li>
                         <h4>Cadastrar funcionario</h4>
                         <div id="fun_ACD">
-                            <form action="onclick">
+                            <form>
                                 <label for="idNomeFunACD">Nome</label><br>
                                 <input type="text" id="idNomeFunACD" name="nomeFun" require><br>
                                 <label for="idCidadeFunACD">Cidade</label><br>
@@ -112,170 +334,4 @@
                     </li>
                    
         </ul>
-    </div>
-    <div id="areaConsulta">
-        <h3>Area consulta</h3>
-        <ul>
-            <li>
-                <h4>Cadastrar consulta</h4>
-                <form action="onclick">
-                    <label for="idConsulta">Tratamento</label><br>
-                    <input type="text" id="idConsulta" name="tipoTratamento" required><br>
-                    <label for="idDataCons">Data</label><br>
-                    <input type="date" id="idDataCons" name="dataCons" required><br>
-                    <label for="idHoraCons">Horário</label><br>
-                    <input type="time" id="idHoraCons" name="horaCons" required><br>
-                    <label for="idNomePacCons">Nome do paciente</label><br>
-                    <input type="text" id="idNomePacCosn" name="nomePac" required><br>
-                    <label for="idDentistaCosn">Nome do dentista</label><br>
-                    <input type="text" id="idDentistaCons" name="nomeDoDentiista" required><br>
-                    <label for="idValorCons">Valor da consulta</label><br>
-                    <input type="number" id="idValorCons" name="valorCons" step="10" min="50.00" required><br>
-
-                    <br>
-                    <input type="submit" value="Enviar" required>
-                    
-                </form>
-            </li>
-            <li>
-                <h4>Deletar consulta</h4>
-            </li>
-            <li>
-                <h4>Listar consultas</h4>
-            </li>
-            <li>
-                <h4>Atualizar consulta</h4>
-            </li>
-        </ul>
-    </div>
-    <div id="tratamento">
-        <h3>Tratamentos</h3>
-        <ul>
-            <li>
-                <h4>Cadastrar tratamento</h4>
-                <form action="onclick">
-                    <label for="idNomeTrat">Nome do tratamento</label><br>
-                    <input type="text" id="idNomeTrat" name="NomeTrat" required><br>
-                    <label for="idDesc">Descrição</label><br>
-                    <input type="text" id="idDesc" name="descTrat" required><br>
-                    <label for="idDuracaotrat">Duração (em semanas)</label><br>
-                    <input type="number" id="idDuracaotrat" name="duracaoTrat" step="1" min="1" required><br>
-                    <label for="idValorTrat">Valor do tratamento</label><br>
-                    <input type="number" id="idValorTrat" name="valorTrat" step="10" min="50" required><br>
-
-                    <br>
-                    <input type="submit" value="Enviar" required>
-                </form>
-            </li>
-            <li>
-                <h4>Deletar tratamento</h4>
-            </li>
-            <li>
-                <h4>Listar tratamentos</h4>
-            </li>
-            <li>
-                <h4>Atualizar tratamento</h4>
-            </li>
-        </ul>
-    </div>
-    <div id="estoque">
-        <h3>Materiais</h3>
-        <ul>
-            <li>
-                <h4>Cadastrar material</h4>
-                <form action="onclick">
-                    <label for="idNomeMT">Nome</label><br>
-                    <input type="text" id="idNomeMT" name="nomeMT" required><br>
-                    <label for="idQTmaterial">Quantidade</label><br>
-                    <input type="number" id="idQTmaterial" name="QTmaterial" required><br>
-                    <label for="idValorMT">Valor</label><br>
-                    <input type="number" id="idValorMT" name="valorMT" required><br>
-                    <label for="idDescMT">Descrição</label><br>
-                    <input type="text" id="idDescMT" name="descMT" required><br>
-
-                    <br>
-                    <input type="submit" value="Enviar" required>
-                </form>
-            </li>
-            <li>
-                <h4>Deletar material</h4>
-            </li>
-            <li>
-                <h4>Listar material</h4>
-            </li>
-            <li>
-                <h4>Atualizar material</h4>
-            </li>
-        </ul>
-    </div>
-    <div id="forncedor">
-        <h3>Fornecedor</h3>
-        <ul>
-            <li>
-                <h4>Cadastrar fornecedor</h4>
-                <form action="onclick">
-                    <label for="idNomeForn">Nome</label><br>
-                    <input type="text" id="idNomeForn" name="nomeForn" required><br>
-                    <label for="idTel1Forn">Telefone (1)</label><br>
-                    <input type="tel" id="idTel1Forn" name="tel1Forn" required><br>
-                    <label for="idTel2Forn">Telefoen (2)</label><br>
-                    <input type="tel" id="idTel2Forn" name="te2Forn" required><br>
-                    <label for="idCNPJForn">CNPJ</label><br>
-                    <input type="text" id="idCNPJForn" name="cnpjForn" required><br>
-                    <label for="idProdutoForn">Produto Fornecido</label><br>
-                    <input type="text" id="idProdutoForn" name="produtoForn" required><br>
-                    <label for="idDesForn">Descrição</label><br>
-                    <input type="text" id="idDescForn" name="descForn" required><br>
-
-                    <br>
-                    <input type="submit" value="Enviar" required>
-                </form>
-            </li>
-            <li>
-                <h4>Deletar fonecedor</h4>
-            </li>
-            <li>
-                <h4>Listar fonecedores</h4>
-            </li>
-            <li>
-                <h4>Atualizar fornecedor</h4>
-            </li>
-        </ul>
-    </div>
-    <div id="fatura">
-        <h3>Fatura</h3>
-        <ul>
-            <li>
-                <h4>Extrair fatura</h4>
-                <form action="onclick">
-                    <label for="idNumFat">Nº da fatura</label><br>
-                    <input type="number" id="idNumFat" name="numFat" required><br>
-                    <label for="idDataFat">Data</label><br>
-                    <input type="date" id="idDataFat" name="dataFat" required><br>
-                    <label for="idNomePacFat">Paciente</label><br>
-                    <input type="text" id="idNomePacFat" name="nomePacFat" required><br>
-                    <label for="idNumConsFat">Nº da consulta</label><br>
-                    <input type="number" id="idNumConsFat" name="numPacFat" required><br>
-                    <label for="idTotalFat">Total</label><br>
-                    <input type="number" id="idTotalFat" name="totalFat" required><br>
-
-                    <br>
-                    <input type="submit" value="Enviar" required>
-
-                </form>
-            </li>
-            <li>
-                <h4>Deletar fatura</h4>
-            </li>
-            <li>
-                <h4>Listar fatura</h4>
-            </li>
-            <li>
-                <h4>Atualizar fatura</h4>
-            </li>
-        </ul>
-    </div>
-   </div>
-   <script src="script.js"></script>
-</body>
-</html>
+    </div>-->
