@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinica Floour</title>
+    <link rel="stylesheet" href="final.css">
+</head>
+<body>
+    <div id="PrimeiroLayut">
+        <h2 id="TituloPrincipal">Clinica Floour</h2>
+        <h4 id="fraseMotivacional">Um sorriso saudável começa aqui. <br> Agende agora uma consulta.</h4>
+        <div id="grupImg">
+            <img id="img1" src="imagens/young-female-patient-visiting-dentist-office-img-cortada.png" alt="">
+            <img id="img2" src="imagens/pexels-cedric-fauntleroy-4270362-img-cortada.png" alt=""><br>
+            <img id="img3" src="imagens/beautiful-girl-sitting-dentist-s-office-img-cortada.png" alt="">
+            <img id="img4" src="imagens/pexels-andrea-piacquadio-3779705-img-cortada.png" alt=""> <br>
+        </div>
+        <div id="avaliacao" onclick="exibirFormulario()"><h3>Agendar Avaliação</h3></div>
+        <form id="form6">
+            <label for="idNomePac">Nome</label><br>
+            <input type="text" id="idNomePac" name="nome" required><br>
+            <label for="idTelPac">Celular</label><br>
+            <input type="tel" id="idTelPac" name="idTelPac" placeholder="(00) 0000-0000" maxlength="15" required><br>
+            <label for="idEmailPac">Seu melhor e-mail</label><br>
+            <input type="email" id="idEmailPac" name="email" placeholder="exemplo@dominio.com" required><br>
+
+            <input type="submit" id="submitPac" value="Agendar" required><br>
+           
+    </div>
+   <script>
+
+function mascaraTelefone(selector) {
+    const inputs = document.querySelectorAll(selector);
+  
+    inputs.forEach((input) => {
+      input.addEventListener('input', function() {
+        let phone = this.value;
+        
+        phone = phone.replace(/\D/g, '');
+        phone = phone.replace(/^(\d{2})(\d)/g, '($1) $2');
+        phone = phone.replace(/(\d)(\d{4})$/, '$1-$2');
+        
+        this.value = phone;
+      });
+    });
+  }
+  
+  mascaraTelefone('input[type="tel"]');
+  
+  
+  
+  function mascaraCPF(selector) {
+    const inputs = document.querySelectorAll(selector);
+  
+    inputs.forEach((input) => {
+      input.addEventListener('input', function() {
+        let cpf = this.value;
+        
+        cpf = cpf.replace(/\D/g, ''); // Remove tudo que não é dígito
+        cpf = cpf.replace(/^(\d{3})(\d)/g, '$1.$2'); // Insere ponto após o terceiro dígito
+        cpf = cpf.replace(/^(\d{3})\.(\d{3})(\d)/g, '$1.$2.$3'); // Insere ponto após o sexto dígito
+        cpf = cpf.replace(/^(\d{3})\.(\d{3})\.(\d{3})(\d{1,2})/g, '$1.$2.$3-$4'); // Insere hífen após o nono dígito
+        
+        this.value = cpf;
+      });
+    });
+  }
+  
+  mascaraCPF('input[type="cpf"]');
+  
+  function mascaraRG(selector) {
+    const inputs = document.querySelectorAll(selector);
+  
+    inputs.forEach((input) => {
+      input.addEventListener('input', function() {
+        let rg = this.value;
+        
+        rg = rg.replace(/\D/g, ''); // remove tudo que não é dígito
+        rg = rg.replace(/(\d{7})(\d{1})/, "$1-$2");
+  
+        
+        
+        this.value = rg;
+      });
+    });
+  }
+  
+  mascaraRG('input[type="rg"]');
+  
+  function validarEmail(selector) {
+    const inputs = document.querySelectorAll(selector);
+  
+    inputs.forEach((input) => {
+      input.addEventListener('input', function() {
+        const email = this.value;
+        
+        const re = /\S+@\S+\.\S+/;
+        const isValid = re.test(email);
+        
+        if (isValid) {
+          this.classList.remove('invalid');
+          this.classList.add('valid');
+        } else {
+          this.classList.remove('valid');
+          this.classList.add('invalid');
+        }
+      });
+    });
+  }
+  
+  validarEmail('input[type="email"]');
+  
+
+    function exibirFormulario() {
+    // Seleciona o elemento da li e o elemento do formulário
+    const li = document.getElementById("avaliacao");
+    const formulario = document.getElementById("form6");
+  
+    // Adiciona o evento de clique na li para exibir o formulário
+    li.addEventListener("click", function(event) {
+      event.preventDefault();
+      formulario.style.display = "block";
+    });
+  
+    // Adiciona o evento de envio ao formulário para escondê-lo depois de enviado
+    formulario.addEventListener("submit", function(event) {
+      event.preventDefault();
+      formulario.style.display = "none";
+      // Aqui você pode adicionar a lógica para enviar o formulário
+    });
+  }
+  
+   </script>
+</body>
+</html>
